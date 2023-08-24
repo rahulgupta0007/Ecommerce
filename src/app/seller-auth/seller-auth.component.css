@@ -1,0 +1,66 @@
+/* style for backgroud */
+.backgroud {
+    background-image: url(https://cache.mrporter.com/content/images/cms/ycm/resource/blob/1283478/8e0ddd0e6e0e4c702020bfed66eef3bb/image-desktop-data.jpg/w1200_q80.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 1360px;
+    margin-left: -125px;
+    margin-top: -80px;
+    height: 554px;
+}
+/* style for sign form */
+.sign-up,.login {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    color: black;
+}
+
+/* style for validator */
+div span {
+    color: red;
+    font-size: 11px;
+    text-align: left;
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+
+/* style for form */
+.common-form {
+    background-color: #b7cda8;
+    padding: 29px;
+    width: 417px;
+    height: 476px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 35px;
+
+}
+
+/* style for signup button */
+div button {
+
+    border-radius: 5px 5px 5px 5px;
+    background-color: black;
+    color: white;
+    width: 99px;
+    height: 36px;
+    text-align: center;
+    margin-left: 104px;
+}
+
+/* style for toggle form page link */
+.auth-toggle {
+    margin-top: -6px;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+/* style for showing error */
+logerror {
+    margin-left: 10px;
+}

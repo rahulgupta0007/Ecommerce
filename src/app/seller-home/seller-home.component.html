@@ -1,0 +1,33 @@
+<!-- display seller's add product -->
+<div class="Product-list">
+    <!-- display delete product message -->
+    <p class="showDeletemsg">{{deleteMessage}}</p>
+    <table>
+        <!-- table head details -->
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>Category</th>
+                <th>Discription</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- product details -->
+            <tr *ngFor="let item of showProductList">
+                <td><img src="{{item.productImageUrl}}" /></td>
+                <td>{{item.productName}}</td>
+                <td>{{item.productPrice}}</td>
+                <td>{{item.productColor}}</td>
+                <td>{{item.productCategory}}</td>
+                <td>{{item.productDiscription}}</td>
+                <!-- product delete button -->
+               <td><fa-icon class="deleteIcon" (click)="deleteProduct(item.id)"[icon]="icon"></fa-icon></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

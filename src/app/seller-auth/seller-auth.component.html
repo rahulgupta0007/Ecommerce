@@ -1,0 +1,43 @@
+<!-- sign/Login for seller -->
+<div class="backgroud">
+    <div class="seller-auth">
+        <!-- For seller sign up -->
+        <div *ngIf="!checkpage" class="sign-up">
+            <form [formGroup]="signUpForm" (ngSubmit)="signup(signUpForm.value)" class="common-form">
+                <!--input field For seller Name -->
+                <input class="form-input" type="text" placeholder="Enter your Name" formControlName="user">
+                <span *ngIf="uservalid && uservalid.invalid && uservalid.touched">*Required Field!</span>
+                <!--input field For seller password-->
+                <input class="form-input" type="password" placeholder="Enter your password" formControlName="password">
+                <span *ngIf="passwordvalid && passwordvalid.invalid && passwordvalid.touched ">*RequiredField!</span>
+                <!--input field For email -->
+                <input class="form-input" type="email" placeholder="Enter your email" formControlName="email">
+                <span *ngIf="emailvalid && emailvalid.invalid && emailvalid.touched">*Enter valid email</span>
+                <!--link for toogle the form page-->
+                <a class="auth-toggle" (click)="showLogin()">Already have acount? click to Login</a>
+                <!-- button for signup -->
+                <button [disabled]="signUpForm.invalid" class="form-button">Sign-up</button>
+            </form>
+        </div>
+    </div>
+    
+    <!--For Seller login-up  -->
+    <div *ngIf="checkpage" class="login">
+        <!-- getting error by putting wrong credintails -->
+        <p class="error-p" #logerror >{{autherror}}</p>
+        <!-- Form for login -->
+        <form [formGroup]="loginUpForm" (ngSubmit)="loginup(loginUpForm.value)" class="common-form">
+             <!--input field For email-->
+            <input class="form-input" type="email" placeholder="Enter your email" formControlName="email">
+            <span *ngIf="emailvalid && emailvalid.invalid && emailvalid.touched">*Enter valid email</span>
+             <!--input field For seller password-->
+            <input class="form-input" type="password" placeholder="Enter your password" formControlName="password">
+            <span *ngIf="passwordvalid && passwordvalid.invalid && passwordvalid.touched ">*Required Field!</span>
+            <!--link for toogle the form page-->
+            <a class="auth-toggle" (click)="showSignup()" >Don't have acount? click to sign-up</a>
+            <!-- button for Login -->
+            <button [disabled]="loginUpForm.invalid" class="form-button">Login</button>
+        </form>
+    </div>      
+</div>
+

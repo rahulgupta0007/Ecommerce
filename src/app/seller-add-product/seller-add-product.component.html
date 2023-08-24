@@ -1,0 +1,31 @@
+<!-- Add Product-Form -->
+<div class="productsubmit">
+    <!-- Display a message indicating the result of adding a product -->
+    <p>{{addproductMessage}}</p>
+    <form [formGroup]="addsellerproduct" (ngSubmit)="sellerAddProduct(addsellerproduct.value)" class="common-form " >
+        
+        <!--input field For Product Name  -->
+        <input class="form-input" type="text" placeholder="Enter Product Name" formControlName="productName">
+        <span *ngIf="vaildProductName && vaildProductName.invalid && vaildProductName.touched">*Required Field!</span>
+      
+        <!-- Input Field For Product Price -->
+        <input class="form-input" type="text" placeholder="Enter Product Price" formControlName="productPrice">
+        <span *ngIf="vaildProductPrice && vaildProductPrice.invalid && vaildProductPrice.touched">*Required Field!</span>
+       
+        <!-- Input field for product category -->
+        <input class="form-input" type="text" placeholder="Enter Product category" formControlName="productCategory">
+        <span *ngIf="vaildProductCategory && vaildProductCategory.invalid && vaildProductCategory.touched">*Required Field!</span>
+       
+        <!-- Text area for product category -->
+        <textarea class="form-input" placeholder="Enter Product Discription" formControlName="productDiscription"></textarea>
+        <span *ngIf="vaildProductDiscription && vaildProductDiscription.invalid && vaildProductDiscription.touched">*Required Field!</span>    
+        
+        <!-- Input field for product imageUrl -->
+        <input class="form-input" type="url" placeholder="Enter Product imageUrl" formControlName="productImageUrl">
+        <span *ngIf="vaildProductImageUrl && vaildProductImageUrl.invalid && vaildProductImageUrl.touched">*Required Field!</span> 
+
+        <!-- Input field for product color -->
+        <input class="form-input" type="text" placeholder="Enter Product color" formControlName="productColor">
+        <button [disabled]="addsellerproduct.invalid"  class="form-button">Add Product</button>
+    </form>
+</div>

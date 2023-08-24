@@ -1,0 +1,79 @@
+<!-- signup/login page for user -->
+<div class="backgroud"> 
+    <div class="row">
+        <div class="col-sm-3">
+                <!-- For user sign up -->
+                <div *ngIf="!checkpage" class="user-auth">
+                    <div class="user-auth">
+                        <form [formGroup]="userSignUp" (ngSubmit)="signUp(userSignUp.value)" class="common-form">
+                            <!--input field For user Name -->
+                            <input class="form-input" type="text" placeholder="Enter your Name" formControlName="user">
+                            <span *ngIf="uservalid && uservalid.invalid && uservalid.touched">*Required Field!</span>
+                            <!--input field For user password -->
+                            <input class="form-input" type="password" placeholder="Enter your password"formControlName="password">
+                            <span *ngIf="passwordvalid && passwordvalid.invalid && passwordvalid.touched ">*Required Field!</span>
+                            <!--input field For user Email -->
+                            <input class="form-input" type="email" placeholder="Enter your email"  formControlName="email">
+                            <span *ngIf="emailvalid && emailvalid.invalid && emailvalid.touched">*Enter validemail</span>
+                            <!--link for toogle the login form page-->
+                            <a class="auth-toggle" (click)="showLogin()">Already have acount? click to Login</a>
+                           <!-- button for sign-up -->
+                            <button [disabled]="userSignUp.invalid" class="form-button">Sign-up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- user login page -->
+                <div *ngIf="checkpage" class="user-auth">
+                    <p class="error-p" #logerror>{{autherror}}</p>
+                    <form [formGroup]="userLoginup" (ngSubmit)="loginUp(userLoginup.value)" class="common-form">
+                        <!--input field For seller Email -->
+                        <input class="form-input" type="text" placeholder="Enter your email" formControlName="email">
+                        <span *ngIf="emailvalid" && emailvalid.invalid && emailvalid.touched>Enter correct email</span>
+                        <!--input field For user password -->
+                        <input class="form-input" type="passwprd" placeholder="Enter your password"formControlName="password">
+                        <span *ngIf="passwordvalid && passwordvalid.invalid && passwordvalid.touched ">Password Required !</span>
+                         <!--link for toogle the Signup form page-->
+                        <a class="auth-toggle" (click)="showSignup()">Don't have acount? click to sign-up</a>
+                        <!-- button for Login-up -->
+                        <button [disabled]="userLoginup.invalid" class="form-button">Login-up</button>
+                    </form>
+                </div>
+        </div>
+        <!-- right-side template -->
+        <div class="col-sm-8  temp" >
+            <div>
+                <h2>Be Your Own STYLE</h2>
+                <p>The premium Chuck 70 gets a nostalgic update with embroidered butterflies and DIY alphabet beads to dress up your laces.</p>
+                <button routerLink="/">SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

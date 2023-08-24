@@ -1,0 +1,47 @@
+<!-- Carousel Section -->
+<div class="carousel-container">
+	<ngb-carousel *ngIf="popularProduct">
+	  <ng-template *ngFor="let item of popularProduct" ngbSlide>
+		<div class="picsum-img-wrapper">
+		  <!-- Navigate to product details page on image click -->
+		  <a routerLink="/details/{{item.id}}">
+			<img class="home-slide" src="{{item.productImageUrl}}" alt="Random first slide" />
+		  </a>
+		</div>
+		<div class="carousel-caption">
+		  <h3>First slide label</h3>
+		  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+		</div>
+	  </ng-template>
+	</ngb-carousel>
+  </div>
+  
+  <!-- Trendy Product List -->
+  <div class="product-list-wrapper">
+	<h1>Trendy Products</h1>
+	<div class="row">
+	  <div class="col-sm-3" *ngFor="let item of trendyProduct">
+		<div class="product-item">
+		  <!-- Navigate to product details page on image click -->
+		  <a routerLink="/details/{{item.id}}">
+			<img src="{{item.productImageUrl}}" alt="Chuck Taylor All Star Lugged 2.0">
+		  </a>
+		  <div class="product-details">
+			<h6 class="name-head">{{item.productName}}</h6>
+			<div>
+			  <h6 class="product-price">Price: {{item.productPrice}}</h6>
+			</div>
+			<div class="product-color">
+			  <h6>Color: {{item.productColor}}</h6>
+			</div>
+		  </div>
+		  <div class="product-footer">
+			<!-- Buttons to view details and add to cart -->
+			<button routerLink="/details/{{item.id}}">View Details</button>
+			<button routerLink="/app-cart">Add to Cart</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  

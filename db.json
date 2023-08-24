@@ -1,0 +1,202 @@
+{
+  "seller": [
+    {
+      "user": "rahul",
+      "password": "Test@1234",
+      "email": "test@gmail.com",
+      "id": 1
+    },
+    {
+      "user": "seller",
+      "password": "seller@123",
+      "email": "seller@gmial.com",
+      "id": 2
+    },
+    {
+      "user": "sanskar",
+      "password": "wdjjnedj",
+      "email": "sansk@gmial.com",
+      "id": 3
+    },
+    {
+      "user": "ever",
+      "password": "fvedver",
+      "email": "ewshbu@gmaio.com",
+      "id": 15
+    },
+    {
+      "user": "ever",
+      "password": "fvedver",
+      "email": "ewshbu@gmaio.com",
+      "id": 16
+    },
+    {
+      "user": "ewhhvdved",
+      "password": "ieewidui`",
+      "email": "wwdi@gmail.com",
+      "id": 17
+    },
+    {
+      "user": "rahul ",
+      "password": "Test@1234",
+      "email": "test@gmail.com",
+      "id": 18
+    },
+    {
+      "user": "56789765",
+      "password": "////////",
+      "email": "786544578@gmail.com",
+      "id": 19
+    },
+    {
+      "user": "shivam",
+      "password": "Test@1234",
+      "email": "shivam@gmail.com",
+      "id": 20
+    }
+  ],
+  "product": [
+    {
+      "productName": "Chuck 70",
+      "productPrice": "5999",
+      "productCategory": "Hight-Top",
+      "productDiscription": "The premium Chuck 70 gets a nostalgic update with embroidered butterflies and DIY alphabet beads to dress up your laces.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/a/0/a00752c_01.jpg",
+      "productColor": "Blue",
+      "id": 2
+    },
+    {
+      "productName": "Canvas",
+      "productPrice": "6054",
+      "productCategory": "Top",
+      "productDiscription": "The best-ever gets a seasonal makeover with premium canvas in archival color.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/1/6/162050c_01.jpg",
+      "productColor": "Black",
+      "id": 3
+    },
+    {
+      "productName": "Run Star Hike",
+      "productPrice": "5499",
+      "productCategory": "Runs a half size large",
+      "productDiscription": "The fan-favorite Run Star Hike platform gets a fresh coat of color, just in time for spring.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/a/0/a03063c_01_1.jpg",
+      "productColor": "Green",
+      "id": 5
+    },
+    {
+      "productName": "Run Star Motion",
+      "productPrice": "8000",
+      "productCategory": "Run type",
+      "productDiscription": "Heel pods with ultra-expressive lugs define the style.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/1/7/171545c_01_1_1.jpg",
+      "productColor": "Black",
+      "id": 6
+    },
+    {
+      "productName": "All Star Lugged 2.0",
+      "productPrice": "4,949",
+      "productCategory": "men's High-Top",
+      "productDiscription": "Neutral colors and an expressive, traction outsole reimagine iconic Chucks",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/a/0/a00871c_01.jpg",
+      "productColor": "White",
+      "id": 7
+    },
+    {
+      "productName": "All Star Kids",
+      "productPrice": "2999",
+      "productCategory": "Low Type",
+      "productDiscription": "A color-popped classic, the Chuck Taylor All Star sneaker never goes out of style.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/3/j/3j235c_01_1.jpg",
+      "productColor": "Black",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "user": "aman",
+      "password": "ldjwebuhb",
+      "email": "amana@gmail.com",
+      "id": 1
+    },
+    {
+      "user": "rahul",
+      "password": "Test@1234",
+      "email": "test@gmail.com",
+      "id": 3
+    },
+    {
+      "user": "ewce",
+      "password": "ewcwe",
+      "email": "ecea@gmail.com",
+      "id": 5
+    },
+    {
+      "user": "ra",
+      "password": "123455",
+      "email": "ra@gmail.com",
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "productName": "Run Star Motion",
+      "productPrice": "8000",
+      "productCategory": "Run type",
+      "productDiscription": "Heel pods with ultra-expressive lugs define the style.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/1/7/171545c_01_1_1.jpg",
+      "productColor": "Black",
+      "Quentity": 1,
+      "userId": 3,
+      "productId": 6,
+      "id": 1
+    },
+    {
+      "productName": "Run Star Motion",
+      "productPrice": "8000",
+      "productCategory": "Run type",
+      "productDiscription": "Heel pods with ultra-expressive lugs define the style.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/1/7/171545c_01_1_1.jpg",
+      "productColor": "Black",
+      "Quentity": 1,
+      "userId": 3,
+      "productId": 6,
+      "id": 2
+    },
+    {
+      "productName": "Chuck 70",
+      "productPrice": "5999",
+      "productCategory": "Hight-Top",
+      "productDiscription": "The premium Chuck 70 gets a nostalgic update with embroidered butterflies and DIY alphabet beads to dress up your laces.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/a/0/a00752c_01.jpg",
+      "productColor": "Blue",
+      "Quentity": 1,
+      "productId": 2,
+      "userId": null,
+      "id": 31
+    },
+    {
+      "productName": "Run Star Motion",
+      "productPrice": "8000",
+      "productCategory": "Run type",
+      "productDiscription": "Heel pods with ultra-expressive lugs define the style.",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/1/7/171545c_01_1_1.jpg",
+      "productColor": "Black",
+      "Quentity": 1,
+      "userId": 3,
+      "productId": 6,
+      "id": 32
+    },
+    {
+      "productName": "All Star Lugged 2.0",
+      "productPrice": "4,949",
+      "productCategory": "men's High-Top",
+      "productDiscription": "Neutral colors and an expressive, traction outsole reimagine iconic Chucks",
+      "productImageUrl": "https://www.converse.in/media/catalog/product/a/0/a00871c_01.jpg",
+      "productColor": "White",
+      "Quentity": 1,
+      "userId": 3,
+      "productId": 7,
+      "id": 33
+    }
+  ]
+}

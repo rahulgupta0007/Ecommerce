@@ -1,0 +1,33 @@
+<!-- product details section -->
+<div class="row product-details" *ngIf="productDetails">
+    <!-- left colomn: product image -->
+    <div class="col-sm-6">
+        <img class="product-image" src="{{productDetails.productImageUrl}}" alt="">
+    </div>
+    <!-- right colomn product details and control -->
+    <div class="col-sm-6">
+        <!-- product details -->
+        <div class="details">
+            <h1>{{productDetails.productName}}</h1>
+            <h3>price: ₹ {{productDetails.productPrice}}</h3>
+            <div>
+                color:
+                <h5 [style.backgroundColor]="productDetails.productColor" class="product-color"></h5>
+            </div>
+            <h6>Category:{{productDetails.productCategory}}</h6>
+            <h6>Discription:{{productDetails.productDiscription}}</h6>
+            <!-- add to cart and Buy now buttons -->
+            <button (click)="addToCart()" class="form-button">Add to Cart</button>
+            <button class="form-button">Buy now</button>
+            <!--Quantity  section-->
+            <div class="quantity-group">
+                <!-- decrease quantity button -->
+                <button (click)="handleQuentity('min')">-</button>
+                <!-- Quantity input -->
+                <input type="text" value={{productQuentity}}>
+                <!-- increase quantity button -->
+                <button (click)="handleQuentity('plus')">+</button>
+            </div>
+        </div>
+    </div>
+</div>

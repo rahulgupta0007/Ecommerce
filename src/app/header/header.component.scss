@@ -1,0 +1,114 @@
+/* Styling for the navigation bar */
+.navigation-bar {
+    margin-bottom: -22px;
+    padding-bottom: 18px;
+    border: 1px solid gray;
+    display: flex;
+    width: 1357px;
+    margin-left: -125px;
+    padding-left: 271px;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+/* Navigation Menu */
+nav img {
+    width: 160px;
+    height: 130px;
+    align-items: center;
+    margin-left: -265px;
+    margin-top: 14px
+}
+
+nav h1 {
+    color: black;
+    margin: 0px;
+    font-size: 40px;
+}
+nav ul {
+
+    display: inline-flex;
+    margin: 0px;
+    padding: 45px;
+    list-style: none;
+    grid-gap: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav li {
+
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+ /* Search Bar */
+.nav-Search-bar {
+    display: flex;
+    width: 40%;
+    margin-top: 5px;
+    flex: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    input {
+
+        color: black;
+        border: 1px solid black;
+        height: 34px;
+        border-right: 0px;
+        width: 100%;
+        border-radius: 5px 0 0 5px;
+        margin-top: 8px;
+    }
+
+    button {
+        color: black;
+        border: 1px solid black;
+        height: 34px;
+        border-left: 0px;
+        border-radius: 0px 5px 5px 0px;
+        margin-top: 8px;
+    }
+}
+
+
+
+
+// Styling for the seller-specific navigation
+.sellernav ul {
+    cursor: pointer;
+
+}
+
+
+/* Suggested Search Results */
+.suggested-result {
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #ffff;
+    width: 300px;
+    top: 40px;
+    border: 1px solid #ddd;
+}
+
+.suggested-result li {
+    border: 1px solid #fff;
+    padding: 5px;
+
+}
+
+.suggested-result a {
+    cursor: pointer;
+    color: black;
+}

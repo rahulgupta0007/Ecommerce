@@ -1,0 +1,26 @@
+/* style for table head */
+table{
+    text-align: left;
+    color: black;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+/* style for table content */
+table td,table th{
+    border: 1px solid grey;
+    padding: 10px;
+    min-height: 160px;
+}
+/* style for product image */
+img{
+    width: 100px;
+    height: 100px;
+}
+/* style for product delete message */
+.showDeletemsg{
+    color: green;
+}
+/* style for delete button */
+.deleteIcon{
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+/* style for search product section */
+.search-item {
+    margin: 25px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 800px;
+  
+}
+/* style for search product image */
+.search-item img {
+    width: 100px;
+    object-fit: contain;
+    height: 150px;
+}
+/* style for search product details */
+.search-item h6 {
+    font-size: 24px;
+    color: black;
+}
+
+.search-item p {
+    margin: 5px;
+}
+
+.search-item span {
+    margin-right: 10px;
+}

@@ -1,0 +1,45 @@
+<nav class="navigation-bar">
+    <!-- Navigation Logo -->
+    <div class="navigation-logo">
+        <a #logo routerLink="/"><img src="assets/logo/conerseLogo.svg" alt="converse"></a>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div [ngSwitch]="menutype">
+        <!-- Default User Menu -->
+        <ul *ngSwitchCase="'default'">
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="/seller-auth">Seller</a></li>
+            <li><a routerLink="/app-cart">Cart({{cartItems}})</a></li>
+            <li><a routerLink="/user-auth">Login</a></li>
+        </ul>
+        <!-- Logged-in User Menu -->
+        <ul *ngSwitchCase="'user'">
+            <li><a routerLink="">{{userName | titlecase}}</a></li>
+            <li><a routerLink="">Home</a></li>
+            <li><a routerLink="/seller-auth">Seller</a></li>
+            <li><a routerLink="/app-cart">Cart({{cartItems}})</a></li>
+            <li><a (click)="userLogout()">Logout</a></li>
+        </ul>
+        <!-- Seller Menu -->
+        <ul class="sellernav" *ngSwitchCase="'seller'">
+            <li><a href="#">{{sellerName | titlecase}}</a></li>
+            <li><a routerLink="/seller-add-product">Add-Product</a></li>
+            <li><a routerLink="/seller-home">Product-list</a></li>
+            <li><a (click)="sellerLogout()">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Search Bar -->
+    <div *ngIf="menutype === 'default' || menutype === 'user'" class="nav-Search-bar">
+        <input (keyup)="searchProduct($event)" (blur)="hideSearch()" type="text" #searchInput
+            placeholder="Search For Product" />
+        <button (click)="submitSearch(searchInput.value)">Search</button>
+        <!-- Suggested Search Results -->
+        <ul class="suggested-result" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a (mousedown)="redirectToDetails(item.id)">{{item.productName}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
